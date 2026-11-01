@@ -1,114 +1,85 @@
-# 🏎️ F1 Speed Visualization – Charles Leclerc
+# F1 Speed Visualization – Charles Leclerc
 
-### How fast do Formula 1 cars really go around a circuit?
+## Project Overview
 
-An exploratory data visualization project analyzing Charles Leclerc's speed and telemetry during the **2024 Italian Grand Prix Qualifying at Monza** using Python and real-world Formula 1 data.
+This project analyzes Formula 1 telemetry data to understand how car speed changes throughout a lap. Using data from Charles Leclerc's qualifying session at the 2024 Italian Grand Prix at Monza, the project visualizes speed variations across the circuit and identifies braking zones.
 
-## 📌 About the Project
+The analysis uses telemetry data retrieved from the OpenF1 API and visualized using Python.
 
-Ever wondered how an F1 car behaves while navigating a racing circuit?
+## Objectives
 
-This project explores Charles Leclerc's telemetry data to understand speed variations, acceleration, braking patterns, and track positions throughout a selected lap at Monza.
+- Analyze speed variations throughout a qualifying lap.
+- Visualize speed distribution across the Monza circuit.
+- Identify braking zones using telemetry data.
+- Understand how drivers manage speed around different sections of a circuit.
 
-Using Python, I transformed raw telemetry data into visual insights to better understand Formula 1 car performance.
+## Technologies Used
 
-## 🎯 Project Objectives
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Requests
+- OpenF1 API
+- Google Colab
 
-- Analyze speed variations throughout a lap.
-- Visualize the Monza circuit using positional coordinates.
-- Identify high-speed sections and braking points.
-- Understand acceleration and deceleration patterns.
-- Explore real-world Formula 1 telemetry data.
+## Dataset Details
 
-## 🛠️ Tech Stack
+| Parameter | Details |
+|---|---|
+| Driver | Charles Leclerc |
+| Driver Number | 16 |
+| Season | 2024 |
+| Grand Prix | Italian Grand Prix |
+| Circuit | Monza |
+| Session | Qualifying |
+| Telemetry Samples | 321 matched samples |
 
-- **Python** – Data analysis
-- **Pandas** – Data manipulation
-- **NumPy** – Numerical operations
-- **Matplotlib** – Data visualization
-- **Requests** – API data retrieval
-- **Google Colab** – Development environment
-- **OpenF1 API** – Formula 1 telemetry data
+## Visualizations
 
-## 📊 Project Visualizations
+### Speed vs. Time
 
-### 1. Speed vs. Elapsed Time
-
-Analyzing how Charles Leclerc's speed changes throughout the selected lap.
+Shows how the car's speed changes throughout the selected lap.
 
 ![Speed vs Time](images/speed%20vs%20time.png)
 
-### 2. Monza Circuit – Speed Distribution
+### Circuit Speed Map
 
-A colour-coded circuit map showing speed variations across different track sections.
+Displays speed variations across different sections of the Monza circuit.
 
 ![Monza Circuit Speed Map](images/monza%20ckt%20speed%20map.png)
 
-### 3. Speed Map with Braking Zones
+### Speed Map with Braking Zones
 
-Visualizing recorded braking positions along the circuit.
+Highlights sections where braking activity was detected during the lap.
 
 ![Speed Map with Braking Zones](images/speed%20map%20with%20braking%20zones.png)
 
-## 📡 Dataset
+## Key Analysis
 
-Data collected using the [OpenF1 API](https://openf1.org/).
+The project explores the relationship between vehicle speed, track position, and braking activity. The visualizations help identify high-speed sections, slower corners, and changes in driving behaviour throughout the lap.
 
-- Driver: Charles Leclerc
-- Driver Number: 16
-- Season: 2024
-- Grand Prix: Italian Grand Prix
-- Circuit: Monza
-- Session: Qualifying
-- Matched telemetry samples: 321
+## How to Run
 
-## 📈 Analysis Performed
+1. Open `Charles_Leclerc_F1_Analysis.ipynb` in Google Colab.
+2. Run the notebook cells sequentially.
+3. Retrieve telemetry data using the OpenF1 API.
+4. Process and merge the location and car telemetry data.
+5. Generate the visualizations.
 
-- Speed analysis and distribution.
-- Track position visualization.
-- Speed vs. elapsed time analysis.
-- Braking activity identification.
-- Telemetry data cleaning and integration.
+## Data Source
 
-## 🚀 How to Run the Project
+[OpenF1 API](https://openf1.org/)
 
-1. Clone this repository:
+## Future Improvements
 
-   ```bash
-   git clone https://github.com/GayatriPalodkar/F1-Speed-Visualization.git
-   ```
+- Compare telemetry data from multiple drivers.
+- Analyze additional Formula 1 circuits.
+- Include throttle, gear, and braking analysis.
+- Compare qualifying and race performance.
 
-2. Install the required libraries:
-
-   ```bash
-   pip install pandas numpy matplotlib requests
-   ```
-
-3. Open `Charles_Leclerc_F1_Analysis.ipynb` in Google Colab or Jupyter Notebook.
-
-4. Run the notebook cells in sequence.
-
-## 💡 Key Learnings
-
-- Working with real-world API data.
-- Cleaning and processing telemetry datasets.
-- Combining time-series data from different sources.
-- Creating visualizations using Matplotlib.
-- Exploring Formula 1 performance through data analysis.
-
-## 🔮 Future Improvements
-
-- Compare telemetry between multiple F1 drivers.
-- Analyze different circuits and racing sessions.
-- Create interactive circuit visualizations.
-- Explore throttle, gear and braking patterns in greater detail.
-
-## 👩‍💻 Author
+## Author
 
 **Gayatri Palodkar**
 
-[GitHub Profile](https://github.com/GayatriPalodkar)
-
----
-
-⭐ If you find this project interesting, consider giving the repository a star!
+GitHub: [GayatriPalodkar](https://github.com/GayatriPalodkar)
